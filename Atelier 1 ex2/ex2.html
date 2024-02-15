@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="ex2.css">
+    <title>Mini Word</title>
+</head>
+<body>
+    <p id="titre">TEST</p>
+    <div>
+        <label for="color">Couleur :</label>
+        <input type="color" id="color" onchange="changeColor()">
+    </div>
+
+    <div>
+        <label for="size">Taille (en px) :</label>
+        <input type="number" id="size" onchange="changeFontSize()">
+    </div>
+
+    <div>
+        <label for="font">Police :</label>
+        <select id="font" onchange="changeFontFamily()">
+            <option value="Arial">Arial</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Courier New">Courier New</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Verdana">Verdana</option>
+        </select>
+    </div>
+    <div>
+        <label for="texte">Texte:</label>
+        <textarea id="texte" rows="4" cols="50" oninput="changeText()"></textarea>
+    </div>
+    <div>
+        <p id="paragraph"></p>
+    </div>
+
+    <script src="ex2.js"></script>
+</body>
+</html>
